@@ -1,0 +1,12 @@
+.header{
+    width: 100%; //OCUPA 100% DA LARGURA DA TELA
+    padding: 0.5rem 10% ; 
+    position: fixed; //FIXO EM UMA POSIÇÃO INDEPENDENTE DO SCROLL
+    top: 0; // COORDENADA DA POSICAO, FIXO COM DISTANCIA 0 DO TOPO
+    z-index: 1; // Deixa o header sobreposto a outros elementos
+    background-color: #05C83E ;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; //horizontal
+}

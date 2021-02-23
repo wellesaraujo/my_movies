@@ -1,0 +1,10 @@
+PROJETO - MY MOVIES REACT
+
+Funcões implementadas:
+
+Botão logo = voltar para pagina Home
+Pagina Details: Mostra detalhes de um conteúdo ao clicar sobre seu poster.
+
+A fazer:
+- Adicionar imagem do show na pagina details;
+- Adicionar lista de episódios na pagina details;

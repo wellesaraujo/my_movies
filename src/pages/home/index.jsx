@@ -28,8 +28,15 @@ const Home = () => {
 
     return <div className="home">
         <div className="containerSearch">
-            <input type="text" value={searchField} onChange={(e)=>setSearchField(e.target.value)}/>
-            <button onClick={()=>searchRequest()}>
+            <input 
+                data-testid="input-search"
+                type="text" 
+                value={searchField} 
+                onChange={(e)=>setSearchField(e.target.value)}
+            />
+            <button 
+                data-testid="request-search"
+                onClick={()=>searchRequest()}>
                 Pesquisar
             </button>
         </div>
@@ -40,7 +47,7 @@ const Home = () => {
             movies?.map(movie => {
                 return movie?.show?.image?.medium && 
                 <a href={`details/${movie.show.id}`}>
-                    <img  src={movie?.show?.image?.medium} alt="description" />
+                    <img  src={movie?.show?.image?.medium} alt="description" data-testid={`${movie.show.id}`}/>
                 </a>//ir para details
             })
         }

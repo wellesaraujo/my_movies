@@ -1,7 +1,7 @@
 import React from 'react';
 import { Router, Switch, Route } from 'react-router-dom'
 import { createBrowserHistory } from 'history'
-import Home from './pages/home' //Importacao do arquivo index.jsx 
+import Home from './pages/home' 
 import Details from './pages/details' 
 import { Header } from './components/header';
 
@@ -19,7 +19,11 @@ export const Routes = () => {
         <div className="containerBody">
             <Router history ={browserHistory}>
                 <Switch> 
-                <Route path="/details/:id" component={Details} /> 
+                    
+                    <Route path="/details/:id">
+                        <Details />
+                    </Route> 
+                    
                     <Route path="/"> 
                         <Home /> 
                     </Route>

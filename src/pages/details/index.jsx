@@ -24,9 +24,9 @@ function Details()  {
 
     return <div className="details">
 
-        <h1>{details.name}</h1>
-        <p><i>{details.type}</i></p>
-        <p>{detailsSummary()}</p>
+        <h1 data-testid='detais-name'>{details.name}</h1>
+        <p data-testid='detais-type'><i>{details.type}</i></p>
+        <p data-testid='detais-summary'>{detailsSummary()}</p>
     
     </div>
     
